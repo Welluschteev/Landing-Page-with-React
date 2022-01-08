@@ -1,26 +1,28 @@
+//import react into the bundle
 import React from "react";
+import ReactDOM from "react-dom";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+// include your styles into the webpack bundle
+import "../styles/index.css";
 
-//create your first component
-const Home = () => {
-	return (
-		<div className="text-center mt-5">
-			<h1>Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
-		</div>
-	);
-};
+//import your own components
+
+import Header from "./component/header.jsx";
+import Home from "./component/home.jsx";
+import Jumbotron from "./component/jumbotron.jsx";
+import Footer from "./component/footer.jsx";
+import WrapperGallery from "./component/wrappergallery.jsx";
+import Card from "./component/card.jsx";
+
+//render your react application
+ReactDOM.render(
+	<>
+		<Header />
+		<Jumbotron />
+		<WrapperGallery />
+		<Footer />
+	</>,
+	document.querySelector("#app")
+);
 
 export default Home;
