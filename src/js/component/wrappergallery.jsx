@@ -1,96 +1,94 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import PropType from "prop-types";
-import Card from "./component/card.jsx"
+import Card from "/workspace/react-hello/src/js/component/card.jsx";
 
-const WrapperGallery = () => {
-
+function WrapperGallery() {
 	return (
-		<div className="container">
-			<div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+		<div className="container mx-auto">
+			<div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3 mx-auto">
 				<div className="col">
 					<Card
-						title="Test 1"
-						imageUrl="https://unsplash.it/500"
-						buttonLabel="Test Link 1"
-						buttonUrl="#"
-						description="Integer ipsum odio, accumsan nec ullamcorper sed, ullamcorper eu lectus. Pellentesque laoreet finibus dui ac vestibulum. Praesent dictum enim non placerat malesuada. Maecenas convallis nibh nec tincidunt congue. Phasellus in est quam. Phasellus condimentum felis a molestie convallis. Duis ut eleifend nisi, ut venenatis lorem. Sed in eros mi. Integer vestibulum purus felis, et venenatis sem faucibus eu. Vivamus eget ante ac neque gravida vulputate. Proin auctor orci in lacus vestibulum faucibus. Aliquam tincidunt placerat ligula malesuada molestie. Praesent vehicula dolor metus, vel cursus enim laoreet egestas. Etiam eu pulvinar dolor, vitae condimentum ipsum. Aenean ut dui sed felis porta aliquam id id sapien."
+						Title="Test 1"
+						ImageURL="https://unsplash.it/500?random=1"
+						ButtonText="Test Link 1"
+						ButtonURL="#"
+						Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ex bibendum, eleifend dui quis, fringilla risus. Integer tempus mollis odio quis scelerisque. Aliquam arcu augue, facilisis sit amet ultrices id, pellentesque vel magna. "
 					/>
 				</div>
 				<div className="col">
 					<Card
-						title="Test 2"
-						imageUrl="https://unsplash.it/500"
-						buttonLabel="Test Link 2"
-						buttonUrl="#"
-						description="Integer ipsum odio, accumsan nec ullamcorper sed, ullamcorper eu lectus. Pellentesque laoreet finibus dui ac vestibulum. Praesent dictum enim non placerat malesuada. Maecenas convallis nibh nec tincidunt congue. Phasellus in est quam. Phasellus condimentum felis a molestie convallis. Duis ut eleifend nisi, ut venenatis lorem. Sed in eros mi. Integer vestibulum purus felis, et venenatis sem faucibus eu. Vivamus eget ante ac neque gravida vulputate. Proin auctor orci in lacus vestibulum faucibus. Aliquam tincidunt placerat ligula malesuada molestie. Praesent vehicula dolor metus, vel cursus enim laoreet egestas. Etiam eu pulvinar dolor, vitae condimentum ipsum. Aenean ut dui sed felis porta aliquam id id sapien."
+						Title="Test 2"
+						ImageURL="https://unsplash.it/500?random=2"
+						ButtonText="Test Link 2"
+						ButtonURL="#"
+						Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ex bibendum, eleifend dui quis, fringilla risus. Integer tempus mollis odio quis scelerisque. Aliquam arcu augue, facilisis sit amet ultrices id, pellentesque vel magna. "
 					/>
 				</div>
 				<div className="col">
 					<Card
-						title="Test 3"
-						imageUrl="https://unsplash.it/500"
-						buttonLabel="Test Link 3"
-						buttonUrl="#"
-						description="Integer ipsum odio, accumsan nec ullamcorper sed, ullamcorper eu lectus. Pellentesque laoreet finibus dui ac vestibulum. Praesent dictum enim non placerat malesuada. Maecenas convallis nibh nec tincidunt congue. Phasellus in est quam. Phasellus condimentum felis a molestie convallis. Duis ut eleifend nisi, ut venenatis lorem. Sed in eros mi. Integer vestibulum purus felis, et venenatis sem faucibus eu. Vivamus eget ante ac neque gravida vulputate. Proin auctor orci in lacus vestibulum faucibus. Aliquam tincidunt placerat ligula malesuada molestie. Praesent vehicula dolor metus, vel cursus enim laoreet egestas. Etiam eu pulvinar dolor, vitae condimentum ipsum. Aenean ut dui sed felis porta aliquam id id sapien."
+						Title="Test 3"
+						ImageURL="https://unsplash.it/500?random=3"
+						ButtonText="Test Link 3"
+						ButtonURL="#"
+						Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ex bibendum, eleifend dui quis, fringilla risus. Integer tempus mollis odio quis scelerisque. Aliquam arcu augue, facilisis sit amet ultrices id, pellentesque vel magna. "
 					/>
 				</div>
 				<div className="col">
 					<Card
-						title="Test 4"
-						imageUrl="https://unsplash.it/500"
-						buttonLabel="Test Link 4"
-						buttonUrl="#"
-						description="Integer ipsum odio, accumsan nec ullamcorper sed, ullamcorper eu lectus. Pellentesque laoreet finibus dui ac vestibulum. Praesent dictum enim non placerat malesuada. Maecenas convallis nibh nec tincidunt congue. Phasellus in est quam. Phasellus condimentum felis a molestie convallis. Duis ut eleifend nisi, ut venenatis lorem. Sed in eros mi. Integer vestibulum purus felis, et venenatis sem faucibus eu. Vivamus eget ante ac neque gravida vulputate. Proin auctor orci in lacus vestibulum faucibus. Aliquam tincidunt placerat ligula malesuada molestie. Praesent vehicula dolor metus, vel cursus enim laoreet egestas. Etiam eu pulvinar dolor, vitae condimentum ipsum. Aenean ut dui sed felis porta aliquam id id sapien."
+						Title="Test 4"
+						ImageURL="https://unsplash.it/500?random=4"
+						ButtonText="Test Link 4"
+						ButtonURL="#"
+						Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ex bibendum, eleifend dui quis, fringilla risus. Integer tempus mollis odio quis scelerisque. Aliquam arcu augue, facilisis sit amet ultrices id, pellentesque vel magna. "
 					/>
 				</div>
 				<div className="col">
 					<Card
-						title="Test 5"
-						imageUrl="https://unsplash.it/500"
-						buttonLabel="Test Link 5"
-						buttonUrl="#"
-						description="Integer ipsum odio, accumsan nec ullamcorper sed, ullamcorper eu lectus. Pellentesque laoreet finibus dui ac vestibulum. Praesent dictum enim non placerat malesuada. Maecenas convallis nibh nec tincidunt congue. Phasellus in est quam. Phasellus condimentum felis a molestie convallis. Duis ut eleifend nisi, ut venenatis lorem. Sed in eros mi. Integer vestibulum purus felis, et venenatis sem faucibus eu. Vivamus eget ante ac neque gravida vulputate. Proin auctor orci in lacus vestibulum faucibus. Aliquam tincidunt placerat ligula malesuada molestie. Praesent vehicula dolor metus, vel cursus enim laoreet egestas. Etiam eu pulvinar dolor, vitae condimentum ipsum. Aenean ut dui sed felis porta aliquam id id sapien."
+						Title="Test 5"
+						ImageURL="https://unsplash.it/500?random=5"
+						ButtonText="Test Link 5"
+						ButtonURL="#"
+						Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ex bibendum, eleifend dui quis, fringilla risus. Integer tempus mollis odio quis scelerisque. Aliquam arcu augue, facilisis sit amet ultrices id, pellentesque vel magna. "
 					/>
 				</div>
 				<div className="col">
 					<Card
-						title="Test 6"
-						imageUrl="https://unsplash.it/500"
-						buttonLabel="Test Link 6"
-						buttonUrl="#"
-						description="Integer ipsum odio, accumsan nec ullamcorper sed, ullamcorper eu lectus. Pellentesque laoreet finibus dui ac vestibulum. Praesent dictum enim non placerat malesuada. Maecenas convallis nibh nec tincidunt congue. Phasellus in est quam. Phasellus condimentum felis a molestie convallis. Duis ut eleifend nisi, ut venenatis lorem. Sed in eros mi. Integer vestibulum purus felis, et venenatis sem faucibus eu. Vivamus eget ante ac neque gravida vulputate. Proin auctor orci in lacus vestibulum faucibus. Aliquam tincidunt placerat ligula malesuada molestie. Praesent vehicula dolor metus, vel cursus enim laoreet egestas. Etiam eu pulvinar dolor, vitae condimentum ipsum. Aenean ut dui sed felis porta aliquam id id sapien."
+						Title="Test 6"
+						ImageURL="https://unsplash.it/500?random=6"
+						ButtonText="Test Link 6"
+						ButtonURL="#"
+						Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ex bibendum, eleifend dui quis, fringilla risus. Integer tempus mollis odio quis scelerisque. Aliquam arcu augue, facilisis sit amet ultrices id, pellentesque vel magna. "
 					/>
 				</div>
 				<div className="col">
 					<Card
-						title="Test 7"
-						imageUrl="https://unsplash.it/500"
-						buttonLabel="Test Link 7"
-						buttonUrl="#"
-						description="Integer ipsum odio, accumsan nec ullamcorper sed, ullamcorper eu lectus. Pellentesque laoreet finibus dui ac vestibulum. Praesent dictum enim non placerat malesuada. Maecenas convallis nibh nec tincidunt congue. Phasellus in est quam. Phasellus condimentum felis a molestie convallis. Duis ut eleifend nisi, ut venenatis lorem. Sed in eros mi. Integer vestibulum purus felis, et venenatis sem faucibus eu. Vivamus eget ante ac neque gravida vulputate. Proin auctor orci in lacus vestibulum faucibus. Aliquam tincidunt placerat ligula malesuada molestie. Praesent vehicula dolor metus, vel cursus enim laoreet egestas. Etiam eu pulvinar dolor, vitae condimentum ipsum. Aenean ut dui sed felis porta aliquam id id sapien."
+						Title="Test 7"
+						ImageURL="https://unsplash.it/500?random=7"
+						ButtonText="Test Link 7"
+						ButtonURL="#"
+						Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ex bibendum, eleifend dui quis, fringilla risus. Integer tempus mollis odio quis scelerisque. Aliquam arcu augue, facilisis sit amet ultrices id, pellentesque vel magna. "
 					/>
 				</div>
 				<div className="col">
 					<Card
-						title="Test 8"
-						imageUrl="https://unsplash.it/500"
-						buttonLabel="Test Link 8"
-						buttonUrl="#"
-						description="Integer ipsum odio, accumsan nec ullamcorper sed, ullamcorper eu lectus. Pellentesque laoreet finibus dui ac vestibulum. Praesent dictum enim non placerat malesuada. Maecenas convallis nibh nec tincidunt congue. Phasellus in est quam. Phasellus condimentum felis a molestie convallis. Duis ut eleifend nisi, ut venenatis lorem. Sed in eros mi. Integer vestibulum purus felis, et venenatis sem faucibus eu. Vivamus eget ante ac neque gravida vulputate. Proin auctor orci in lacus vestibulum faucibus. Aliquam tincidunt placerat ligula malesuada molestie. Praesent vehicula dolor metus, vel cursus enim laoreet egestas. Etiam eu pulvinar dolor, vitae condimentum ipsum. Aenean ut dui sed felis porta aliquam id id sapien."
+						Title="Test 8"
+						ImageURL="https://unsplash.it/500?random=8"
+						ButtonText="Test Link 8"
+						ButtonURL="#"
+						Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ex bibendum, eleifend dui quis, fringilla risus. Integer tempus mollis odio quis scelerisque. Aliquam arcu augue, facilisis sit amet ultrices id, pellentesque vel magna. "
 					/>
 				</div>
 				<div className="col">
 					<Card
-						title="Test 9"
-						imageUrl="https://unsplash.it/500"
-						buttonLabel="Test Link 9"
-						buttonUrl="#"
-						description="Integer ipsum odio, accumsan nec ullamcorper sed, ullamcorper eu lectus. Pellentesque laoreet finibus dui ac vestibulum. Praesent dictum enim non placerat malesuada. Maecenas convallis nibh nec tincidunt congue. Phasellus in est quam. Phasellus condimentum felis a molestie convallis. Duis ut eleifend nisi, ut venenatis lorem. Sed in eros mi. Integer vestibulum purus felis, et venenatis sem faucibus eu. Vivamus eget ante ac neque gravida vulputate. Proin auctor orci in lacus vestibulum faucibus. Aliquam tincidunt placerat ligula malesuada molestie. Praesent vehicula dolor metus, vel cursus enim laoreet egestas. Etiam eu pulvinar dolor, vitae condimentum ipsum. Aenean ut dui sed felis porta aliquam id id sapien."
+						Title="Test 9"
+						ImageURL="https://unsplash.it/500?random=9"
+						ButtonText="Test Link 9"
+						ButtonURL="#"
+						Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ex bibendum, eleifend dui quis, fringilla risus. Integer tempus mollis odio quis scelerisque. Aliquam arcu augue, facilisis sit amet ultrices id, pellentesque vel magna. "
 					/>
 				</div>
 			</div>
 		</div>
-	)
-};
-export default WrapperGallery
+	);
+}
+
+export default WrapperGallery;

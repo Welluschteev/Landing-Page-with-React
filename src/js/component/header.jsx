@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
 	return (
-		<nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+		<nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark bg-gradient">
 			<div className="container-fluid">
 				<a className="navbar-brand fs-2" href="#">
 					Start Bootstrap
